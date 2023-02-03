@@ -1,0 +1,43 @@
+body, html {
+    height: 100%;
+    margin: 0;
+  }
+  .parallax {
+    /* The image used */
+    background-image: url('/img/parallax.png');
+  
+    /* Full height */
+    height: 100%; 
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+  }
+  .parallax2 {
+    /* The image used */
+    background-image: url('https://www.lavanguardia.com/files/image_449_220/uploads/2020/12/08/5fcfbf2c01941.jpeg');
+  
+    /* Full height */
+    height: 100%; 
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+  }
+  h2,  h3, h4{
+    text-align: center;
+    margin-top: 10px;
+  }
+  h1{
+    text-align: center;
+    font-size: 100px;
+    color: #fff;  
+    padding: 40vh;
+  }
+ 
