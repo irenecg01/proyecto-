@@ -108,27 +108,27 @@ img {
 }
 
 
-section#sobrenosotros {
+section.columnas-3 {
   text-align: center;
   padding: min(3rem, 30px);
   min-height: 80vh;
 }
 
-section#sobrenosotros div {
+section.columnas-3 div {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
 }
 
-section#sobrenosotros div figure {
+section.columnas-3 div figure {
   width: 300px;
   max-width: 300px;
   transition: all 0.3s;
   padding: 20px;
 }
 
-section#sobrenosotros div figure picture img {
+section.columnas-3 div figure picture img {
   max-width: 100%;
   height: 200px;
   -o-object-fit: cover;
