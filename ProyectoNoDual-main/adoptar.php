@@ -9,13 +9,13 @@ $mascotas[] = [
     'imagen' => "img/adoptar1.png"
 ];
 $mascotas[] = [
-    'nombre' => 'Irene',
+    'nombre' => 'Nieve',
     'raza' => 'Husky',
     'chip' => 'Si',
     'imagen' => "img/adoptar1.png"
 ];
 $mascotas[] = [
-    'nombre' => 'Cerezo',
+    'nombre' => 'Nieve',
     'raza' => 'Husky',
     'chip' => 'Si',
     'imagen' => "img/adoptar1.png"
