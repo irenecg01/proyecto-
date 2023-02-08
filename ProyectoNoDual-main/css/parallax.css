@@ -4,7 +4,7 @@ body, html {
   }
   .parallax {
     /* The image used */
-    background-image: url('/img/parallax.png');
+    background-image: url('/img/animal.jpg');
   
     /* Full height */
     height: 100%; 
@@ -18,7 +18,7 @@ body, html {
   }
   .parallax2 {
     /* The image used */
-    background-image: url('https://www.lavanguardia.com/files/image_449_220/uploads/2020/12/08/5fcfbf2c01941.jpeg');
+    background-image: url('/img/animal4.jpg');
   
     /* Full height */
     height: 100%; 
@@ -37,7 +37,7 @@ body, html {
   .parallax h1{
     text-align: center;
     font-size: 100px;
-    color: #fff;  
+    color: rgb(255, 255, 255);  
     padding: 40vh;
   }
  
