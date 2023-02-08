@@ -238,3 +238,12 @@ ul {
         align-items: center;
     }
    
+
+   .privacidad{
+       font-size: 10px;
+       margin-top: 20px;
+       
+   }
+   .privacidad :hover a{
+
+   }
