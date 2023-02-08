@@ -230,4 +230,11 @@ ul {
       margin-right: 20px;
   }
 
- 
+  .caja__trasera-register p {
+    text-align: center;
+      }
+
+    .caja__trasera-login h3{
+        align-items: center;
+    }
+   

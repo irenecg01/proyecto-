@@ -1,0 +1,44 @@
+
+    <section id="galeria">
+        <h2>Mascotas perdidas</h2>
+        <br>
+        <form action="/adoptar.html">
+            <label for="mascotas">Filtras por:</label>
+            <select id="mascotas" name="mascotas">
+                <option value="perros">Perros</option>
+                <option value="gatos">Gatos</option>
+                <option value="pajaros">Pajaros</option>
+            </select>
+        </form>
+        <br>
+        <div class="mascotas">
+            <template>
+                <figure>
+                    <picture>
+                        <img src="img/adoptar1.png" alt="">
+                    </picture>
+                    <figcaption>
+                        <h2>Laila</h2>
+                    </figcaption>
+                    
+                    <button class="open">Ver ficha</button>
+
+                </figure>
+            </template>
+        </div>
+
+    </section>
+
+    <div id="modal_container" class="modal-container">
+        <div class="modal">
+            <h2 id="nombre">Datos de la mascota<br>
+            </h2>
+            <p class="raza"></p>
+            <img id="imagen" src="/img/adoptar1.png" alt="" width="200" height="150">
+            <br>
+            <br>
+            <span id="chip"></span>
+            <br>
+            <button id="close">Cerrar</button>
+        </div>
+    </div>

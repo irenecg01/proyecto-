@@ -4,7 +4,7 @@ body, html {
   }
   .parallax {
     /* The image used */
-    background-image: url('/ProyectoNoDual-main/img/parallax.png');
+    background-image: url('/img/parallax.png');
   
     /* Full height */
     height: 100%; 
@@ -30,11 +30,11 @@ body, html {
     background-size: cover;
     
   }
-  h2,  h3, h4{
+  .parallax h2,   .parallax h3,   .parallax h4{
     text-align: center;
     margin-top: 10px;
   }
-  h1{
+  .parallax h1{
     text-align: center;
     font-size: 100px;
     color: #fff;  

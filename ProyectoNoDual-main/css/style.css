@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 
+:root{
+  --color-verde-1 : #52B788;
+}
 
 * {
   box-sizing: border-box;
@@ -94,7 +97,7 @@ body::before {
   content: '';
   position: absolute;
   width: 100%;
-  background: #52B788;
+  background: var(--color-verde-1);
   /*Fondo de abajo del body*/
   clip-path: inset(47% 0 0 0);
   z-index: -1;
@@ -451,7 +454,7 @@ section#galeria div figure picture img {
 }
 
 section#galeria div figure:hover {
-  background-color: #52B788;
+  background-color: var(--color-verde-1);
   padding: 10px;
   border-radius: 10px;
 
