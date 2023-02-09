@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 
 :root{
-  --color-verde-1 : #52B788;
+  --color-verde-1 : #fff;
 }
 
 * {
@@ -12,9 +12,30 @@
 
 }
 
+select{
+      width: 80%;
+      padding: 10px;
+      position: relative;
+    }
+  
+
+.info-adoptar{
+  flex-wrap: wrap;
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  margin-top: 50px;
+}
+
+p{
+  font-size: 17px;
+  font-weight: bold;
+}
 
 button {
-  background-color: #2a9b46;
+  background-color: black;
   border: 0;
   border-radius: 5px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
@@ -72,10 +93,24 @@ td {
   margin: 0;
 }
 
-.modal p {
+.modal-container .modal p {
   opacity: 0.7;
-  font-size: 14px;
+  font-size: 18px;
   color: black;
+}
+
+.modal-container .modal footer{
+  display:flex;
+  justify-content: center;
+  gap:1em;
+  background-color: inherit;
+}
+
+.filtros{
+  display:flex;
+  justify-content: center;
+  gap:1em;
+  background-color: inherit;
 }
 
 a {
@@ -88,21 +123,13 @@ body {
 
   min-height: 100vh;
   justify-content: center;
-  background: #B7E4C7;
-  /*Fondo de arriba del body*/
+  background-image:url(/img/Diseño\ sin\ título\ \(2\).png)
+  ;
+   /*Fondo de arriba del body*/
   position: relative;
 }
 
-body::before {
-  content: '';
-  position: absolute;
-  width: 100%;
-  background: var(--color-verde-1);
-  /*Fondo de abajo del body*/
-  clip-path: inset(47% 0 0 0);
-  z-index: -1;
-  height: 100%;
-}
+
 
 
 img {
@@ -407,7 +434,7 @@ ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #333;
+  background-color: black;
 }
 
 li {
@@ -431,6 +458,7 @@ section#galeria {
   padding: min(3rem, 30px);
   min-height: 100vh;
 }
+
 
 section#galeria div {
   display: flex;

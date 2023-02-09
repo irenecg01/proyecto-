@@ -1,14 +1,44 @@
 <section id="galeria">
-        <h2>Mascotas en adopción</h2>
+        <div class="info-adoptar">
+        <h2>¿Desea adoptar una ascota?</h2>
         <br>
-        <form action="/adoptar.html">
-            <label for="mascotas">Filtras por:</label>
-            <select id="mascotas" name="mascotas">
-                <option value="perros">Perros</option>
-                <option value="gatos">Gatos</option>
-                <option value="pajaros">Pajaros</option>
+        <p>Si buscas adoptar una mascota nosotros te propiciamos toda la ayuda posible.
+        Para poder adoptar pricipalmente debes inciar sesión, luego ya podrás navegar por la página con total libertad y podrás adoptar su 
+        mascota ideal.</p>
+        </div>
+
+        <div class="info-adoptar">
+            <h2>¿Como te ayudamos para poder adoptar?</h2>
+            <br>
+            <br>
+            <p>Nosotros te aportamos toda la ayuda posible gestionando las mascotas disponibles para adoptar y facilitandote los datos de las 
+            mascotas. Por otro lado tenemos tratamos con multitud de mascotas, por lo tanto para facilitar la busqueda de su mascota ideal 
+            tenemos unas serie de filtros para facilitar el proceso de busqueda.</p>
+        </div>
+    
+        <br>
+        <br>
+        <br>
+        <h1>Mascotas en adopción</h1>
+        <br>
+        <div class="filtros"> 
+            <form action="/adoptar.html">
+            <label for="state">Filtrar por mascotas:</label>
+            <select id="state" name="state">
+              
             </select>
         </form>
+        <form action="/adoptar.html">
+            <label for="mascotas">Filtrar por razas:</label>
+            <select id="province" name="province">
+            </select>
+        </form>
+        <form action="adoptar.html">
+            <label for="mascotas">Filtrar por estado</label>
+            <select name="city" id="city">
+            </select>
+        </form>
+    </div>
         <br>
         <div class="mascotas">
             <template>
@@ -30,14 +60,18 @@
 
     <div id="modal_container" class="modal-container">
         <div class="modal">
-            <h2 id="nombre">Datos de la mascota<br>
-            </h2>
+            <header>
+                <h2 id="nombre">Datos de la mascota</h2> 
+            </header>
+
             <p class="raza"></p>
             <img id="imagen" src="/img/adoptar1.png" alt="" width="200" height="150">
-            <br>
-            <br>
             <span id="chip"></span>
-            <br>
-            <button id="close">Cerrar</button>
+            <p>Para obtener mas informacion inicie sesión</p>
+            <footer>
+                <button id="close">Cerrar</button>
+                <a href="/inicio"><button>Iniciar Sesión</button></a>                
+            </footer>
+
         </div>
     </div>
