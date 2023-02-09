@@ -124,6 +124,10 @@ main{
     margin-bottom: 20px;
     color: #40916C;
 }
+.contenedor__login-register .btninicio{
+    display: flex;
+    justify-content: center;
+}
 
 .contenedor__login-register form input[type=text],
 .contenedor__login-register form input[type=password],
@@ -141,7 +145,6 @@ main{
 .contenedor__login-register form input[type=checkbox]{
     margin-right:1em;
 }
-
 
 
 
@@ -166,7 +169,13 @@ main{
     font-size: 10px;
     margin-top: 20px;
     
+   
 }
+.contenedor__login-register form .registro{
+   display: flex;
+   justify-content: center;
+}
+
 
 
 
