@@ -125,7 +125,10 @@ main{
     color: #40916C;
 }
 
-.contenedor__login-register form input{
+.contenedor__login-register form input[type=text],
+.contenedor__login-register form input[type=password],
+.contenedor__login-register form input[type=email]
+{
     width: 100%;
     margin-top: 26px;
     padding: 10px;
@@ -134,6 +137,12 @@ main{
     font-size: 16px;
     outline: none;
 }
+
+.contenedor__login-register form input[type=checkbox]{
+    margin-right:1em;
+}
+
+
 
 
 .contenedor__login-register form div{
@@ -153,6 +162,11 @@ main{
     outline: none;
 }
 
+.contenedor__login-register form .privacidad{
+    font-size: 10px;
+    margin-top: 20px;
+    
+}
 
 
 
@@ -162,6 +176,7 @@ main{
 }
 .formulario__register{
     display: none;
+    margin-top:70px;
 }
 
 
@@ -198,9 +213,7 @@ main{
     }
 }
 
-.btnAtras{
-    background-color: red;
-}
+
 
 ul {
     list-style-type: none;
@@ -239,9 +252,3 @@ ul {
     }
    
 
-   .privacidad{
-       font-size: 10px;
-       margin-top: 20px;
-       
-   }
-   
