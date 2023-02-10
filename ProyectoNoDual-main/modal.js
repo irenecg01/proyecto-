@@ -36,6 +36,7 @@ function abrir(ev){
 close.addEventListener('click', () => {
   modal_container.classList.remove('show');
 });
+
 let states = [
   {
    code: 1,
@@ -167,4 +168,6 @@ const initMainSelect = () => {
   }
 }
 initMainSelect();
+
+
 
