@@ -24,7 +24,7 @@ $mascotas[] = [
 $mascotas_json = json_encode($mascotas);
 
 include("fragment/cabecera.html");
-include("fragment/menu_invitado.html");
+include("fragment/menu.php");
 
 ?>
 

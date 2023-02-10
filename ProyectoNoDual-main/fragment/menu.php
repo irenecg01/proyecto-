@@ -13,10 +13,19 @@
       </li>
       <li>
         <a href="/aboutus.php#sobrenosotros">Sobre Nosotros</a>
-      </li>
-      <li style="float:right">
-        <a href="inicio/">Iniciar Sesión</a>
-      </li>
-    </ul>
+      </li> 
 
-  </div>
+      <?php if($user_logged): ?>
+        <li style="float:right">
+          <a href="/logout.php"> <?php echo($_SESSION['usuario']); ?> </a> 
+        </li>
+      <?php else: ?>
+        <li style="float:right">
+          <a href="inicio/">Iniciar Sesión </a> 
+        </li>
+      <?php endif; ?>
+
+    </ul> 
+  </div> 
+
+  
