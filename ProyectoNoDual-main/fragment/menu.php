@@ -18,6 +18,7 @@
       <?php if($user_logged): ?>
         <li style="float:right">
           <a href="/logout.php"> <?php echo($_SESSION['usuario']); ?> </a> 
+          <a href="logout.php">Cerrar Sesión</a>
         </li>
       <?php else: ?>
         <li style="float:right">
