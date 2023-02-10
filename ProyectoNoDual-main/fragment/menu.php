@@ -14,7 +14,7 @@
       <li>
         <a href="/aboutus.php#sobrenosotros">Sobre Nosotros</a>
       </li> 
-
+      <!-- si el usuario esta registrado -->
       <?php if($user_logged): ?>
         <li style="float:right">
           <a href="/logout.php"> <?php echo($_SESSION['usuario']); ?> </a> 
