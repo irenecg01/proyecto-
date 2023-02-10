@@ -1,21 +1,61 @@
+<section id="galeria">
+    <div class="info-adoptar">
+        <h2>¿Desea dar en adopción a su mascota?</h2>
+        <br>
+        <p>Si no puede hacerse cargo de su mascota no dude en rellenar el formulario para poder buscarle un hogar mejor.
+            Nosotros te propiciamos toda la ayuda posible.
+            Para poder dar en adopción pricipalmente debes inciar sesión, posteriormente ya podrá navegar rellenar el
+            formulario con los datos que se le pide.
+            Y asi buscarle un hogar mejor a su mascota.</p>
+    </div>
 
-    <section id="galeria">
-        <h1>Formulario</h1>
-        <h3>Rellene el formulario para poder buscarle un lugar mejor a su mascota</h3>
+    <div class="info-adoptar">
+        <h2>¿Como te ayudamos para poder dar en adopción?</h2>
         <br>
         <br>
-        <form action="/action_page.php">
-            <label for="fname">Nombre:</label><br>
-            <input type="text" id="fname" name="fname" value=""><br><br>
-            <label for="lname">Apellidos:</label><br>
-            <input type="text" id="lname" name="lname" value=""><br><br>
-            <label for="lemail">Email:</label><br>
-            <input type="email" name="lemail" id="lemail" value=""><br><br>
-            <label for="date">Fecha de nacimiento:</label><br>
-            <input type="date" id="date" name="date" value=""><br><br>
-            <input type="file" id="file" name="file" value=""><br><br>
-            <button>
-                Enviar
-            </button>
-        </form>
-    </section>
+        <p>Nosotros te aportamos toda la ayuda posible gestionando los formularios rellenados por las personas que
+            quieren dar en adopción a sus mascota por los motivos que sean.
+            Una vez rellenado y enviado el formulario nosotros nos encargamos de revisar que estan correctos todos los
+            datos tanto de la mascota como del propietario.
+            Hecho esto publicariamos el anuncio para que el resto de los usuarios de la páginas lo puedan ver.
+        </p>
+    </div>
+    <br>
+    <br>
+<div class="container-form">
+    <h1>Formulario</h1>
+    <h3>Rellene el formulario para poder buscarle un lugar mejor a su mascota</h3>
+    <br>
+    <form action="/action_page.php">
+        <label for="fname">Nombre de su mascota:</label><br>
+        <input type="text" id="fname" name="fname" value=""><br><br>
+        <label for="fname">Seleccione su mascota:</label><br>
+        <input type="radio" id="vehicle1" name="vehicle1" value="Bike">
+        <label for="vehicle1"> Perro</label>
+        <input type="radio" id="vehicle1" name="vehicle1" value="Bike">
+        <label for="vehicle2"> Gato</label><br><br>
+        <label for="lname">Raza:</label><br>
+        <input type="text" id="lname" name="lname" value=""><br><br>
+        <label for="fname">Genero de su mascota:</label><br>
+        <input type="radio" id="perro" name="mascota" value="macho">
+        <label for="vehicle3"> Macho</label>
+        <input type="radio" id="gato" name="mascota" value="hembra">
+        <label for="vehicle4"> Hembra</label><br><br>
+        <label for="fname">Estado de su mascota:</label><br>
+        <input type="radio" id="vehicle5" name="estado" value="cachorro">
+        <label for="vehicle5"> Cachorro</label>
+        <input type="radio" id="vehicle6" name="estado" value="adulto">
+        <label for="vehicle6"> Adulto</label><br><br>
+        <label for="date">Elija una imagen de su mascota:</label><br>
+        <input type="file" accept="image/*"><br><br>
+        <button>
+            Enviar
+        </button>
+        &nbsp;
+        &nbsp;
+        <a href="/inicio"><button>Iniciar Sesión</button></a>
+</div>
+</section>
+
+
+</form>
