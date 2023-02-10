@@ -1,7 +1,7 @@
 <div class="container">
     <ul>
       <li>
-        <a href="/#noticias">Home</a>
+        <a href="/#noticias">Home </a>
       </li>
       <li> <a href="adoptar.php">Adoptar</a>
       </li>
