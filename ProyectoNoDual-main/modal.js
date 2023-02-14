@@ -54,10 +54,8 @@ let states = [
           code: 07,
           name: 'Adulto'
         },
-         {
-         code: 08,
-         name: 'Anciano'
-         }
+         
+       
        ]
      },
      {
