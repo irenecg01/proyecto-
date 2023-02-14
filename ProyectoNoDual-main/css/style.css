@@ -28,7 +28,7 @@
   text-align: center;
   width: 50%;
   padding: 10px;
-  background-color: lightgray;
+  background-color: lemonchiffon;
 
 }
 
@@ -39,7 +39,7 @@
   text-align: center;
   width: 70%;
   padding: 10px;
-  background-color:lightgray;
+  background-color:lemonchiffon;
 
 }
 
@@ -50,7 +50,7 @@
   text-align: center;
   width: 50%;
   padding: 10px;
-  background-color: lightgray;
+  background-color: lemonchiffon;
 
 }
 
@@ -59,6 +59,8 @@ select{
       display: block;
       padding: 10px;
       position: relative;
+      border: 2px solid black;
+      border-radius: 10px;
     }
   
 
@@ -205,6 +207,8 @@ section.columnas-3 div figure picture img {
   height: 200px;
   -o-object-fit: cover;
   object-fit: cover;
+  border: 2px solid black;
+  border-radius: 10px;
 }
 
 /*---------------------------------------
@@ -521,6 +525,8 @@ section#galeria div figure picture img {
   height: 250px;
   -o-object-fit:cover;
   object-fit: cover;
+  border: 2px solid black;
+  border-radius: 10px;
 }
 
 section#galeria div figure:hover {
