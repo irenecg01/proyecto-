@@ -153,16 +153,14 @@ body {
 
 
 
-img {
-  border: 2px solid black;
-  border-radius: 10px;
-}
+
 
 
 section.columnas-3 {
   text-align: center;
   padding: min(3rem, 30px);
   min-height: 80vh;
+  
 }
 
 section.columnas-3 div {
@@ -170,6 +168,7 @@ section.columnas-3 div {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+  
 }
 
 section.columnas-3 div figure {
