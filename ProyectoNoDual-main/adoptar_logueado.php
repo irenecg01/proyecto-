@@ -45,4 +45,5 @@ include("fragment/menu_logueado.php");
 <?php
 include("fragment/adoptar_logueado.html");
 include("fragment/pie2.html");
+
 ?>

@@ -1,11 +1,11 @@
 <?php
     include("conexion.php");
     $nombre=$_GET["nombre"];
-    $correo=$_GET["correo"];
     $usuario=$_GET["usuario"];
-    $contrasena=$_GET["contrasena"];
+    $contraseña=$_GET["contraseña"];
+    $correo=$_GET["correo"];
 
-    $base->query("INSERT INTO usuarios (nombre,correo,usuario,contrasena) VALUES ('$nombre', '$correo', '$usuario', '$contrasena')");
+    $base->query("INSERT INTO usuarios (nombre,usuario,contraseña,correo) VALUES ('$nombre', '$usuario','$contraseña', '$correo');");
     header("Location:/");
 
 

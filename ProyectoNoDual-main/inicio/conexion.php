@@ -1,12 +1,12 @@
 <?php
+$servername = "localhost";
+ $username = "root"; 
+ $contraseña = "";
+  $dbname = "mascotas"; 
+  $conn = mysqli_connect($servername, $username, $contraseña, $dbname); 
+  if (!$conn) { 
+    die("Conexión fallida: " . mysqli_connect_error()); 
+} echo "Conexión exitosa";
+?>
 
-    try{
-        $base = new PDO("mysql:host=localhost; dbname=ipet", "root", "");
-        $base->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-        $base->exec("SET CHARACTER SET utf8");
-    }catch(Exception $e){
-        
-        die("Error : " . $e->getMessage());
-    }
 
-    ?>
