@@ -59,19 +59,19 @@
         <form action="iniciar.php" method="POST" class="formulario__login">
           <h2>Iniciar Sesión</h2>
           <input type="email" name="correo" placeholder="Correo Electronico" required>
-          <input type="password" name="contrasena" placeholder="Contraseña" required>
+          <input type="password" name="contraseña" placeholder="Contraseña" required>
           <div class="btninicio">
             <input style="background-color:#C68C69" type="submit" name="inicio" value="Iniciar Sesion">
           </div>
         </form>
 
         <!--Register-->
-        <form action="registrar.php" method="GET " class="formulario__register">
+        <form action="registrar.php" method="POST" class="formulario__register">
           <h2>Regístrarse</h2>
           <input type="text" name="nombre" placeholder="Nombre completo" required>
           <input type="email" name="correo" placeholder="Correo Electronico" required>
           <input type="text" name="usuario" placeholder="Usuario" required>
-          <input type="password" name="contrasena" placeholder="Contraseña" required>
+          <input type="password" name="contraseña" placeholder="Contraseña" required>
           <div class="privacidad">
             <input type="checkbox" id="condiciones"><label for="condiciones">Al identificarte aceptas nuestras <a
                 href="/fragment/condiciones.html"> Condiciones de uso
