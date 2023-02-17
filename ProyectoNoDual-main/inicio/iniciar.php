@@ -1,18 +1,19 @@
 <?php
-
 $correo = $_POST["correo"];
-$contraseña = $_POST["contraseña"];
+$contrasena = $_POST["contraseña"];
 
 try {
-
+  $base = new PDO("mysql:host=localhost; dbname=ipet", "root","");
+  $base-> setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+  $base-> exec("SET CHARACTER SET utf8");
   include("conexion.php");
   
-  $sql = "SELECT * FROM usuarios WHERE (correo=:correo  or usuario=:correo) AND contraseña=:contraseña";
+  $sql = "SELECT * FROM usuarios WHERE correo=:correo  AND contrasena=:contrasena";
   $resultado = $base->prepare($sql);
   $login = htmlentities(addslashes($_POST['correo']));
-  $password = htmlentities(addslashes($_POST['contraseña']));
+  $password = htmlentities(addslashes($_POST['contrasea']));
   $resultado->bindValue(":correo", $correo);
-  $resultado->bindValue(":contraseña", $contraseña);
+  $resultado->bindValue(":contrasena", $contrasena);
   $resultado->execute();
   
   $numero_registro = $resultado->rowCount();
@@ -30,7 +31,4 @@ try {
 } catch (Exception $e) {
   die("Error: " . $e->getMessage());
 }
-
-
-
 ?>
