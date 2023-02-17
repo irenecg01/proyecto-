@@ -207,8 +207,8 @@ section.columnas-3 div figure picture img {
   height: 200px;
   -o-object-fit: cover;
   object-fit: cover;
-  border: 2px solid black;
-  border-radius: 10px;
+  
+  
 }
 
 /*---------------------------------------

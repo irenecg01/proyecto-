@@ -9,7 +9,7 @@
         <a href="perdidas_logueado.php">Mascotas Perdidas</a>
       </li>
       <li>
-        <a href="dar_logueado.php">Dar adf´lhviodhbhioEn Adopción</a>
+        <a href="dar_logueado.php">Dar En Adopción</a>
       </li>
       <li>
         <a href="/aboutus_logueado.php#sobrenosotros">Sobre Nosotros</a>
