@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 
-:root{
-  --color-verde-1 : #fff;
+:root {
+  --color-verde-1: #fff;
 }
 
 * {
@@ -11,17 +11,17 @@
   font-family: 'Poppins', sans-serif;
 }
 
-::selection{
-  background:	#C68C69;
+::selection {
+  background: #C68C69;
   color: #fff
 }
 
-.wrap{
+.wrap {
   filter: blur(5px);
 
 }
 
-.formulario-perdidas{
+.formulario-perdidas {
   border: 2px solid;
   border-radius: 10px;
   margin: auto;
@@ -32,18 +32,18 @@
 
 }
 
-.container-texto{
+.container-texto {
   border: 2px solid;
   border-radius: 10px;
   margin: auto;
   text-align: center;
   width: 70%;
   padding: 10px;
-  background-color:lemonchiffon;
+  background-color: lemonchiffon;
 
 }
 
-.container-form{
+.container-form {
   border: 2px solid;
   border-radius: 10px;
   margin: auto;
@@ -54,17 +54,17 @@
 
 }
 
-select{
-      width: 80%;
-      display: block;
-      padding: 10px;
-      position: relative;
-      border: 2px solid black;
-      border-radius: 10px;
-    }
-  
+select {
+  width: 80%;
+  display: block;
+  padding: 10px;
+  position: relative;
+  border: 2px solid black;
+  border-radius: 10px;
+}
 
-.info-adoptar{
+
+.info-adoptar {
   flex-wrap: wrap;
   display: block;
   margin-block-start: 1em;
@@ -74,13 +74,13 @@ select{
   margin-top: 50px;
 }
 
-p{
+p {
   font-size: 17px;
   font-weight: bold;
 }
 
 .btnEnviar {
-  background-color: black;
+  background-color: #000;
   border: 0;
   border-radius: 5px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
@@ -155,17 +155,17 @@ td {
   color: black;
 }
 
-.modal-container .modal footer{
-  display:flex;
+.modal-container .modal footer {
+  display: flex;
   justify-content: center;
-  gap:1em;
+  gap: 1em;
   background-color: inherit;
 }
 
-.filtros{
-  display:flex;
+.filtros {
+  display: flex;
   justify-content: center;
-  gap:1em;
+  gap: 1em;
   background-color: inherit;
 }
 
@@ -179,8 +179,8 @@ body {
 
   min-height: 100vh;
   justify-content: center;
-  background-image:url(../img/fondomodal.png);
-   /*Fondo de arriba del body*/
+  background-image: url(../img/fondomodal.png);
+  /*Fondo de arriba del body*/
   position: relative;
 }
 
@@ -194,7 +194,7 @@ section.columnas-3 {
   text-align: center;
   padding: min(3rem, 30px);
   min-height: 80vh;
-  
+
 }
 
 section.columnas-3 div {
@@ -202,7 +202,7 @@ section.columnas-3 div {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  
+
 }
 
 section.columnas-3 div figure {
@@ -217,8 +217,8 @@ section.columnas-3 div figure picture img {
   height: 200px;
   -o-object-fit: cover;
   object-fit: cover;
-  
-  
+
+
 }
 
 /*---------------------------------------
@@ -533,7 +533,7 @@ section#galeria div figure {
 section#galeria div figure picture img {
   max-width: 100%;
   height: 250px;
-  -o-object-fit:cover;
+  -o-object-fit: cover;
   object-fit: cover;
   border: 2px solid black;
   border-radius: 10px;
@@ -544,4 +544,51 @@ section#galeria div figure:hover {
   padding: 10px;
   border-radius: 10px;
 
+}
+
+
+
+.wrappaboutus {
+  margin-top: 60px;
+  text-align: center;
+}
+
+.abh1 {
+  font-family: 'Poppins', cursive;
+  font-size: 48px;
+  color: black;
+  
+  margin-bottom: 25px;
+  text-align: center;
+
+}
+
+.aboutus_ {
+  width: auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.aboutus_ .inside_ {
+  width: 250px;
+  margin: 5px;
+  background: lemonchiffon;
+  padding: 20px 10px;
+  border-radius: 10px;
+  border:1px solid #000;
+}
+
+.aboutus_ .inside_ h3 {
+  text-transform: uppercase;
+  font-size: 18px;
+  line-height: 18px;
+  letter-spacing: 2px;
+  margin: 15px 0 0px;
+}
+
+.aboutus_ .inside_ p {
+  margin-top: 20px;
+  font-size: 14px;
+  line-height: 20px;
 }
