@@ -90,6 +90,17 @@ button {
   margin-top: 10px;
 }
 
+.botones {
+  background-color: lightgray;
+  border: 0;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  color: black;
+  font-size: 14px;
+  padding: 10px 25px;
+  margin-top: 10px;
+}
+
 table,
 th,
 td {
