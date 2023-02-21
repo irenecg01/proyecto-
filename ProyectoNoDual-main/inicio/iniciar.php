@@ -22,7 +22,7 @@ try {
     session_start();
     $_SESSION['usuario'] = $_POST['correo'];
     echo "usuario login";
-    header("Location: /");
+    header("Location: ../index_logueado.php");
   } else {
     echo "usuario incorrecto";
     header("Location: /inicio");

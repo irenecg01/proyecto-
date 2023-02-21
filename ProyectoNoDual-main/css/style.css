@@ -79,7 +79,7 @@ p{
   font-weight: bold;
 }
 
-button {
+.btnEnviar {
   background-color: black;
   border: 0;
   border-radius: 5px;

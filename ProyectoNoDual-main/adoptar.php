@@ -1,6 +1,7 @@
 
 <?php
 
+
 session_start();
 $user_logged = false;
 
@@ -31,6 +32,7 @@ $mascotas[] = [
 ];
 
 $mascotas_json = json_encode($mascotas);
+
 
 include("fragment/cabecera.html");
 include("fragment/menu.php");
