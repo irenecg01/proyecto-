@@ -1,7 +1,7 @@
 <div class="container">
     <ul>
       <li>
-        <a href="/index_logueado.php#noticias">Home </a>
+        <a href="index_logueado.php#noticias">Home </a>
       </li>
       <li> <a href="adoptar_logueado.php">Adoptar</a>
       </li>
@@ -12,7 +12,7 @@
         <a href="dar_logueado.php">Dar En Adopción</a>
       </li>
       <li>
-        <a href="/aboutus_logueado.php#sobrenosotros">Sobre Nosotros</a>
+        <a href="aboutus_logueado.php#sobrenosotros">Sobre Nosotros</a>
       </li> 
       <!-- si el usuario esta registrado -->
       <?php if($user_logged): ?>
