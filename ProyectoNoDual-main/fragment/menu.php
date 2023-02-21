@@ -1,7 +1,7 @@
 <div class="container">
     <ul>
       <li>
-        <a href="/#noticias">Home </a>
+        <a href="index.php#noticias">Home </a>
       </li>
       <li> <a href="adoptar.php">Adoptar</a>
       </li>
@@ -12,7 +12,7 @@
         <a href="dar.php">Dar En Adopción</a>
       </li>
       <li>
-        <a href="/aboutus.php#sobrenosotros">Sobre Nosotros</a>
+        <a href="aboutus.php">Sobre Nosotros</a>
       </li> 
       <!-- si el usuario esta registrado -->
       <?php if($user_logged): ?>
