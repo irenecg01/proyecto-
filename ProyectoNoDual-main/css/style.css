@@ -79,6 +79,17 @@ p {
   font-weight: bold;
 }
 
+button {
+  background-color: #000;
+  border: 0;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  color: #fff;
+  font-size: 14px;
+  padding: 10px 25px;
+  margin-top: 10px;
+}
+
 .btnEnviar {
   background-color: #000;
   border: 0;
