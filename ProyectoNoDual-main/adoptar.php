@@ -1,7 +1,9 @@
 
 <?php
 
+//var_dump($_GET);
 
+include("inicio/conexion.php");
 session_start();
 $user_logged = false;
 
@@ -9,30 +11,22 @@ if( isset($_SESSION['usuario'])){
     $user_logged = true;
 } 
 
+if( !isset($_GET["tipo"] )){
+    $perritos = getPerros();
+} else {
+    $tipo = $_GET["tipo"];
+    
+    if($tipo=="todos") {
+        $perritos = getPerros();
+    }else $perritos = getPerrosTipo($tipo);
 
-$mascotas = [];
+}
 
-$mascotas[] = [
-    'nombre' => 'Nieve',
-    'raza' => 'Husky',
-    'chip' => 'Si',
-    'imagen' => "img/adoptar1.png"
-];
-$mascotas[] = [
-    'nombre' => 'Nieve',
-    'raza' => 'Husky',
-    'chip' => 'Si',
-    'imagen' => "img/adoptar1.png"
-];
-$mascotas[] = [
-    'nombre' => 'Nieve',
-    'raza' => 'Husky',
-    'chip' => 'Si',
-    'imagen' => "img/adoptar1.png"
-];
 
-$mascotas_json = json_encode($mascotas);
+//var_dump($perritos);
 
+$perritos_json = json_encode($perritos);
+//print_r($perritos_json);
 
 include("fragment/cabecera.html");
 include("fragment/menu.php");
@@ -40,9 +34,8 @@ include("fragment/menu.php");
 ?>
 
 <script>
-    var mascotas = <?php echo $mascotas_json ?>
+    var mascotas = <?php echo $perritos_json ?>
 </script>
-
 <?php
 include("fragment/adoptar.html");
 include("fragment/pie2.html");

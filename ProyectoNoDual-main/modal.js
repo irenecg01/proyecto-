@@ -1,7 +1,9 @@
-console.log(mascotas)
+//console.log(mascotas)
 
 var template = document.querySelector("template")
 var contenedor = document.querySelector(".mascotas")
+var filtros = document.querySelectorAll("select")
+
 
 
 mascotas.forEach( function(m,pos){
@@ -17,7 +19,6 @@ console.log(open)
 const modal_container = document.getElementById('modal_container');
 const close = document.getElementById('close');
 
-
 open.forEach( function(el){
   el.addEventListener("click", abrir)
 } )
@@ -28,6 +29,7 @@ function abrir(ev){
   document.querySelector("#imagen").src = mascotas[pos].imagen
   document.querySelector("#nombre").innerText = mascotas[pos].nombre
   document.querySelector("p.raza").innerText = mascotas[pos].raza
+ 
 
   modal_container.classList.add('show');  
 }
@@ -37,6 +39,15 @@ close.addEventListener('click', () => {
   modal_container.classList.remove('show');
 });
 
+filtros.forEach( e => e.addEventListener("change",filtrar) )
+
+function filtrar(ev){
+  ev.target.closest("form").submit()
+}
+
+
+
+// filtro 
 let states = [
   {
    code: 1,
@@ -109,6 +120,7 @@ let states = [
    ]
   }
 ];
+//
 
 const getSubItem = (code) => {
   if(code) {

@@ -1,3 +1,5 @@
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
 <section id="galeria">
     <div class="container-texto">
         <div class="info-adoptar">
@@ -25,24 +27,23 @@
     <br>
     <h1>Mascotas en adopción</h1>
     <br>
+    
     <div class="filtros">
-        <form action="/adoptar.html">
-            <label for="state">Filtrar por mascotas:</label>
-            <select id="state" name="state">
-
-            </select>
-        </form>
-        <form action="/adoptar.html">
-            <label for="mascotas">Filtrar por razas:</label>
-            <select id="province" name="province">
-            </select>
-        </form>
-        <form action="adoptar.html">
-            <label for="mascotas">Filtrar por estado</label>
-            <select name="city" id="city">
-            </select>
-        </form>
-    </div>
+        <div class="filtros">
+            <form action="adoptar_logueado.php" method="GET">
+                <label for="tipo">Filtrar por mascotas:</label>
+                <select id="tipo" name="tipo">
+                    <option hidden selected>Filtrar</option>
+                    <option value="perro">Perrito</option>
+                    <option value="gato">Gatito</option>
+                    <option value="todos">todos</option>
+                </select>
+                <!--label for="raza">Filtrar por razas:</label>
+                <select id="raza" name="raza"></select>
+                <label for="estado">Filtrar por estado</label>
+                <select name="estado" id="estado"> </select-->
+            </form>
+        </div>
     <br>
     <div class="mascotas">
         <template>
@@ -67,7 +68,6 @@
         <header>
             <h2 id="nombre"></h2>
         </header>
-
         <p class="raza"></p>
         <img id="imagen" src="/img/adoptar1.png" alt="" width="200" height="150">
         <p class="description"></p>
