@@ -54,14 +54,6 @@
 
 }
 
-select {
-  width: 80%;
-  display: block;
-  padding: 10px;
-  position: relative;
-  border: 2px solid black;
-  border-radius: 10px;
-}
 
 
 .info-adoptar {
@@ -173,12 +165,7 @@ td {
   background-color: inherit;
 }
 
-.filtros {
-  display: flex;
-  justify-content: center;
-  gap: 1em;
-  background-color: inherit;
-}
+
 
 a {
   text-decoration: none;
@@ -602,4 +589,19 @@ section#galeria div figure:hover {
   margin-top: 20px;
   font-size: 14px;
   line-height: 20px;
+}
+.filtros {
+  display: flex;
+  flex-direction: row;
+  
+}
+
+.filtros select {
+  width: 150px; /* o cualquier otro ancho que prefieras */
+  margin-right: 10px; 
+
+  padding: 10px;
+  position: relative;
+  border: 2px solid black;
+  border-radius: 10px;
 }

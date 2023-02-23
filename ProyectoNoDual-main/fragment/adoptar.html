@@ -26,24 +26,38 @@
     <h1>Mascotas en adopción</h1>
     <br>
     <!-- un formulario q vaya a adoptar.php -->
+    
     <div class="filtros">
-        <form action="adoptar.php" method="GET">
+        <form action="adoptar.php" method="GET" >
             <label for="tipo">Filtrar por mascotas:</label>
             <select id="tipo" name="tipo">
-                <option hidden selected>Filtrar</option>
-                <option value="perro">Perrito</option>
-                <option value="gato">Gatito</option>
-                <option value="todos">todos</option>
+               <option value="Todos">Todos</option>
+                <template id="optionTipo">
+                    <option value=""></option>
+                </template>
             </select>
-            <!--label for="raza">Filtrar por razas:</label>
-            <select id="raza" name="raza"></select>
-            <label for="estado">Filtrar por estado</label>
-            <select name="estado" id="estado"> </select-->
+               <!--
+            <label for="raza">Filtrar por raza:</label>
+            <select id="raza" name="raza">
+                <option value="Todos">Todos</option>
+                <template id="optionRaza">
+                    <option value=""></option>
+                </template>
+            </select>
+         
+            <label for="edad">Filtrar por edad:</label>
+            <select id="edad" name="edad">
+                <option value="Todos">Todos</option>
+                <template id="optionEdad">
+                    <option value=""></option>
+                </template>
+            </select>
+        -->
         </form>
     </div>
     <br>
     <div class="mascotas">
-        <template>
+        <template id="mascotas">
             <figure>
                 <picture>
                     <img src="/img/animal10.jpg" alt="">

@@ -1,6 +1,6 @@
 <?php
 
-
+include("inicio/conexion.php");
 session_start();
 $user_logged = false;
 
@@ -8,28 +8,47 @@ if( isset($_SESSION['usuario'])){
     $user_logged = true;
 } 
 
-$mascotas= [];
+$tipos = getTipos();
+$razas = [];
+$tipo = null;
+$raza = null;
+$edades=null;
 
-$mascotas[] = [
-    'nombre' => 'Nieve',
-    'raza' => 'Husky',
-    'chip' => 'Si',
-    'imagen' => "img/adoptar1.png"
-];
-$mascotas[] = [
-    'nombre' => 'Nieve',
-    'raza' => 'Husky',
-    'chip' => 'Si',
-    'imagen' => "img/adoptar1.png"
-];
-$mascotas[] = [
-    'nombre' => 'Perro',
-    'raza' => 'Husky',
-    'chip' => 'Si',
-    'imagen' => "img/adoptar1.png"
-];
+if( !isset($_GET["tipo"] )){
+    $perritos = getPerros();
+   // echo("ho hay tipo");
+} else {
+    $tipo = $_GET["tipo"];
+   // $razas = getRazas($tipo);
+    //echo("hay tipo");
+   //echo($tipo);
+    //echo("<hr>");
+   // var_dump($razas);
 
-$mascotas_json = json_encode($mascotas);
+    if($tipo=="Todos") {
+        $perritos = getPerros();
+    }else $perritos = getPerrosTipo($tipo);
+   // echo("<hr>");
+
+  //  var_dump($perritos);
+}
+//echo("<hr>");
+/*
+if( isset($_GET["raza"] )){
+    $raza=$_GET["raza"];
+  //  echo("hay raza");
+    //echo($raza);
+   // echo("<hr>");
+    if($raza=="Todos") {
+        //$perritos = getPerrosTipo($tipo);
+    }else $perritos = getPerrosRaza($raza);   
+   // echo("<hr>");
+    //var_dump($perritos);
+}
+//var_dump($perritos);
+*/
+$perritos_json = json_encode($perritos);
+//print_r($perritos_json);
 
 include("fragment/cabecera.html");
 include("fragment/menu_logueado.php");
@@ -37,9 +56,16 @@ include("fragment/menu_logueado.php");
 ?>
 
 <script>
-    var mascotas = <?php echo $mascotas_json ?>
-</script>
+    var tipo = <?php echo  json_encode($tipo) ?>;
+    var tipos = <?php echo  json_encode($tipos) ?>;
+    var razas = <?php echo  json_encode($razas) ?>;
 
+    var raza = <?php echo json_encode($raza) ?>;
+    <?php if($raza) echo("filtroraza = '".$raza."';"); ?>
+
+    var mascotas = <?php echo $perritos_json ?>;
+
+</script>
 <?php
 include("fragment/perdidas_logueado.html");
 include("fragment/pie2.html");

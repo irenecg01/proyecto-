@@ -1,19 +1,14 @@
 <section id="galeria">
     <div class="container-texto">
         <div class="info-adoptar">
-            <h2>¿Se le ha perdido su mascota?</h2>
-            <br>
-            <p>Si ha perdido su mascota aqui puede rellenar un formulario para tratar de encontrarlo. Tendrá que
+            <h2>¿Se le ha perdido su mascota?</h2>            <br>            <p>Si ha perdido su mascota aqui puede rellenar un formulario para tratar de encontrarlo. Tendrá que
                 rellenar los campos que se
                 piden con los datos y caracteristicas de su mascota perdida.
             </p>
         </div>
         <a href="../ProyectoNoDual-main/fragment/formulario_perdidas.html"><input type="button" class="btnEnviar"value="Formulario"> </a>
         <div class="info-adoptar">
-            <h2>¿Como te ayudamos para poder encontrar su mascota?</h2>
-            <br>
-            <br>
-            <p>Nosotros te aportamos toda la ayuda posible gestionando los formularios rellenados por las personas que
+            <h2>¿Como te ayudamos para poder encontrar su mascota?</h2>            <br>            <br>            <p>Nosotros te aportamos toda la ayuda posible gestionando los formularios rellenados por las personas que
                 están en busca de su mascota perdida.
                 Una vez rellenado y enviado el formulario nosotros nos encargamos de revisar que estan correctos todos
                 los
@@ -25,39 +20,50 @@
     </div>
     <br>
     <br>
-    <h1>Mascotas Perdidas</h1>
     <br>
+    <h1>Mascotas perdidas</h1>
+    <br>
+    <!-- un formulario q vaya a adoptar.php -->
+    
     <div class="filtros">
-        <form action="/adoptar.html">
-            <label for="state">Filtrar por mascotas:</label>
-            <select id="state" name="state">
-
+        <form action="adoptar.php" method="GET" >
+            <label for="tipo">Filtrar por mascotas:</label>
+            <select id="tipo" name="tipo">
+               <option value="Todos">Todos</option>
+                <template id="optionTipo">
+                    <option value=""></option>
+                </template>
             </select>
-        </form>
-        <form action="/adoptar.html">
-            <label for="mascotas">Filtrar por razas:</label>
-            <select id="province" name="province">
+            <!--
+            <label for="raza">Filtrar por raza:</label>
+            <select id="raza" name="raza">
+                <option value="Todos">Todos</option>
+                <template id="optionRaza">
+                    <option value=""></option>
+                </template>
             </select>
-        </form>
-        <form action="adoptar.html">
-            <label for="mascotas">Filtrar por estado</label>
-            <select name="city" id="city">
+            
+            <label for="edad">Filtrar por edad:</label>
+            <select id="edad" name="edad">
+                <option value="Todos">Todos</option>
+                <template id="optionEdad">
+                    <option value=""></option>
+                </template>
             </select>
+        -->
         </form>
     </div>
     <br>
     <div class="mascotas">
-        <template>
+        <template id="mascotas">
             <figure>
                 <picture>
-                    <img src="img/adoptar1.png" alt="">
+                    <img src="/img/animal10.jpg" alt="">
                 </picture>
                 <figcaption>
                     <h2>Laila</h2>
                 </figcaption>
-
                 <button class="open">Ver ficha</button>
-
             </figure>
         </template>
     </div>
@@ -69,13 +75,17 @@
         <header>
             <h2 id="nombre">Datos de la mascota</h2>
         </header>
-
         <p class="raza"></p>
-        <img id="imagen" src="/img/adoptar1.png" alt="" width="200" height="150">
+        <img id="imagen" src="" alt="" width="200" height="150">
         <span id="chip"></span>
+    
         <footer>
             <button id="close">Cerrar</button>
+           
         </footer>
 
     </div>
+
+
+
 </div>
