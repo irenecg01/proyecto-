@@ -13,6 +13,6 @@ include("fragment/cabecera.html");
 include("fragment/menu_logueado.php");
 
 include("fragment/portada_logueado.html");
-include("fragment/pie.html");
+include("fragment/pie2.html");
 
 ?>

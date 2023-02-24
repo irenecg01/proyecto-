@@ -28,7 +28,7 @@
     <!-- un formulario q vaya a adoptar.php -->
     
     <div class="filtros">
-        <form action="adoptar.php" method="GET" >
+        <form action="adoptar_logueado.php" method="GET" >
             <label for="tipo">Filtrar por mascotas:</label>
             <select id="tipo" name="tipo">
                <option value="Todos">Todos</option>
@@ -36,7 +36,7 @@
                     <option value=""></option>
                 </template>
             </select>
-            <!--
+               <!--
             <label for="raza">Filtrar por raza:</label>
             <select id="raza" name="raza">
                 <option value="Todos">Todos</option>
@@ -44,7 +44,7 @@
                     <option value=""></option>
                 </template>
             </select>
-            
+         
             <label for="edad">Filtrar por edad:</label>
             <select id="edad" name="edad">
                 <option value="Todos">Todos</option>
@@ -80,10 +80,8 @@
         <p class="raza"></p>
         <img id="imagen" src="" alt="" width="200" height="150">
         <span id="chip"></span>
-    
         <footer>
             <button id="close">Cerrar</button>
-           
         </footer>
 
     </div>

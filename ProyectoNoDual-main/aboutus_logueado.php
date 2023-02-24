@@ -11,6 +11,6 @@ if( isset($_SESSION['usuario'])){
 include("fragment/cabecera.html");
 include("fragment/menu_logueado.php");
 include("fragment/aboutus.html");
-include("fragment/pie.html");
+include("fragment/pie2.html");
 
 ?>
