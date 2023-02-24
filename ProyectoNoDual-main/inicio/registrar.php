@@ -25,7 +25,7 @@
 
         if( $q->affected_rows == 1){
             // Usuario insertado correctamente
-            header("location: /index.php");
+            header("location: ../inicio/index.html");
 
         } else {
 
