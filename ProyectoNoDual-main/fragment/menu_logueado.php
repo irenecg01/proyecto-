@@ -19,7 +19,7 @@
         <li style="float:right"><a href="logout.php">Cerrar Sesión</a>
       </li>
         <li style="float:right">
-          <a href="/logout.php"> Bienvenid@ , <?php echo($_SESSION['usuario']); ?> </a> 
+          <a href="/logout.php"> Bienvenid@ <?php echo($_SESSION['usuario']); ?> </a> 
          
         </li>
 
