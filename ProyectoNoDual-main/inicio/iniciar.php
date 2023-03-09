@@ -11,7 +11,7 @@ try {
   $sql = "SELECT * FROM usuarios WHERE correo=:correo  AND contrasena=:contrasena";
   $resultado = $base->prepare($sql);
   $login = htmlentities(addslashes($_POST['correo']));
-  $password = htmlentities(addslashes($_POST['contrasea']));
+  $password = htmlentities(addslashes($_POST['contrasena']));
   $resultado->bindValue(":correo", $correo);
   $resultado->bindValue(":contrasena", $contrasena);
   $resultado->execute();
@@ -20,11 +20,19 @@ try {
   
   if ($numero_registro != 0) {
     session_start();
-    $_SESSION['usuario'] = $_POST['correo'];
-    echo "usuario login";
+    $sql = "SELECT nombre FROM usuarios WHERE correo=:correo AND contrasena=:contrasena";
+    $resultado = $base->prepare($sql);
+    $resultado->bindValue(":correo", $correo);
+    $resultado->bindValue(":contrasena", $contrasena);
+    $resultado->execute();
+    $usuario = $resultado->fetch(PDO::FETCH_ASSOC);
+    if ($usuario) {
+        $_SESSION['usuario'] = $usuario['nombre'];
+    }
+    
     header("Location: ../index_logueado.php");
   } else {
-    echo "usuario incorrecto";
+    echo "Usuario incorrecto";
     header("Location: /inicio");
   }
 
