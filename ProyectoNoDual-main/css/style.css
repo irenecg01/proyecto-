@@ -538,7 +538,7 @@ section#galeria div figure picture img {
 }
 
 section#galeria div figure:hover {
-  background-color: var(--color-verde-1);
+  background-color: #C68C69;
   padding: 10px;
   border-radius: 10px;
 
