@@ -1,7 +1,7 @@
 <?php
 include("inicio/conexion.php");
 
-if (isset($_POST['nombre']) && isset($_POST['tipo']) && isset($_POST['chip'])  && isset($_POST['raza']) && isset($_POST['genero']) && isset($_POST['estado'])&& isset($_POST['lugar'])  && isset($_FILES["imagen"]) && isset($_POST['descripcion'])) {
+if (isset($_POST['nombre']) && isset($_POST['tipo']) && isset($_POST['chip'])  && isset($_POST['raza']) && isset($_POST['genero']) && isset($_POST['estado'])&& isset($_FILES["imagen"]) && isset($_POST['descripcion'])) {
 
     $nombre= $_POST['nombre'];
     $tipo = $_POST['tipo'];
@@ -9,15 +9,14 @@ if (isset($_POST['nombre']) && isset($_POST['tipo']) && isset($_POST['chip'])  &
     $raza = $_POST['raza'];
     $genero = $_POST['genero'];
     $estado = $_POST['estado'];
-    $lugar = $_POST['lugar'];
     $imagen=$_POST[''];
     $descripcion = $_POST['descripcion'];
     try {
         if ($conn) {
 
-            $query = "INSERT INTO animalesperdidos (nombre, tipo,chip, raza, genero, estado,lugar, imagen, descripcion) VALUES (?, ?, ?, ?, ?, ?, ?, ? ,?)";
+            $query = "INSERT INTO animalesperdidos (nombre, tipo,chip, raza, genero, estado, imagen,descripcion) VALUES (?, ?, ?, ?, ?, ?, ?, ?)";
             $stmt = $conn->prepare($query);
-            $stmt->bind_param('sssssssss', $nombre, $tipo,$chip, $raza, $genero, $estado,$lugar, $imagen, $descripcion);
+            $stmt->bind_param('ssssssss', $nombre, $tipo,$chip, $raza, $genero, $estado,$imagen,$descripcion);
             $stmt->execute();
 
 
