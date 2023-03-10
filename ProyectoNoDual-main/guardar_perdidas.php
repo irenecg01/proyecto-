@@ -1,22 +1,26 @@
 <?php
 include("inicio/conexion.php");
 
-if (isset($_POST['nombre']) && isset($_POST['tipo']) && isset($_POST['chip'])  && isset($_POST['raza']) && isset($_POST['genero']) && isset($_POST['estado'])&& isset($_FILES["imagen"]) && isset($_POST['descripcion'])) {
+if (isset($_POST['nombre']) && isset($_POST['tipo']) && isset($_POST['raza'])  && isset($_POST['chip'])&& isset($_POST['genero']) && isset($_POST['estado'])&& isset($_POST['lugar']) && isset($_FILES["imagen"]) && isset($_POST['descripcion'])) {
 
-    $nombre= $_POST['nombre'];
+    $nombre_mascota = $_POST['nombre'];
     $tipo = $_POST['tipo'];
-    $chip = $_POST['chip'];
     $raza = $_POST['raza'];
+    $chip = $_POST['chip'];
     $genero = $_POST['genero'];
     $estado = $_POST['estado'];
-    $imagen=$_POST[''];
+    $lugar = $_POST['lugar'];
+    $nombre_archivo = $_FILES['imagen']['name'];
+    $ruta_archivo = "img/uploads/" . $nombre_archivo;
+    move_uploaded_file($_FILES['imagen']['tmp_name'], $ruta_archivo);
+
     $descripcion = $_POST['descripcion'];
     try {
         if ($conn) {
 
-            $query = "INSERT INTO animalesperdidos (nombre, tipo,chip, raza, genero, estado, imagen,descripcion) VALUES (?, ?, ?, ?, ?, ?, ?, ?)";
+            $query = "INSERT INTO animales (nombre, tipo, raza,chip, genero, estado,lugar,imagen, descripcion) VALUES (?, ?, ?, ?, ?, ?, ?)";
             $stmt = $conn->prepare($query);
-            $stmt->bind_param('ssssssss', $nombre, $tipo,$chip, $raza, $genero, $estado,$imagen,$descripcion);
+            $stmt->bind_param('sssssss', $nombre_mascota, $tipo, $raza, $genero, $estado,$lugar,$ruta_archivo, $descripcion);
             $stmt->execute();
 
 
@@ -33,5 +37,4 @@ if (isset($_POST['nombre']) && isset($_POST['tipo']) && isset($_POST['chip'])  &
 } else {
     echo "Error. Faltan datos en el formulario.";
 }
-
 ?>

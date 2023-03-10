@@ -8,15 +8,17 @@ if (isset($_POST['nombre']) && isset($_POST['tipo']) && isset($_POST['raza']) &&
     $raza = $_POST['raza'];
     $genero = $_POST['genero'];
     $estado = $_POST['estado'];
-    $imagen=$_POST[''];
-    //$imagen = "img/uploads/" . $_FILES["imagen"]["name"];
+    $nombre_archivo = $_FILES['imagen']['name'];
+    $ruta_archivo = "img/uploads/" . $nombre_archivo;
+    move_uploaded_file($_FILES['imagen']['tmp_name'], $ruta_archivo);
+
     $descripcion = $_POST['descripcion'];
     try {
         if ($conn) {
 
             $query = "INSERT INTO animales (nombre, tipo, raza, genero, estado, imagen, descripcion) VALUES (?, ?, ?, ?, ?, ?, ?)";
             $stmt = $conn->prepare($query);
-            $stmt->bind_param('sssssss', $nombre_mascota, $tipo, $raza, $genero, $estado, $imagen, $descripcion);
+            $stmt->bind_param('sssssss', $nombre_mascota, $tipo, $raza, $genero, $estado, $ruta_archivo, $descripcion);
             $stmt->execute();
 
 
@@ -33,5 +35,4 @@ if (isset($_POST['nombre']) && isset($_POST['tipo']) && isset($_POST['raza']) &&
 } else {
     echo "Error. Faltan datos en el formulario.";
 }
-
 ?>
