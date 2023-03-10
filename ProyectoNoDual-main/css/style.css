@@ -511,9 +511,8 @@ section#galeria {
   text-align: center;
   padding: min(3rem, 30px);
   min-height: 100vh;
+
 }
-
-
 section#galeria div {
   display: flex;
   flex-direction: row;
@@ -543,8 +542,6 @@ section#galeria div figure:hover {
   border-radius: 10px;
 
 }
-
-
 
 .wrappaboutus {
   margin-top: 60px;
@@ -605,3 +602,4 @@ section#galeria div figure:hover {
   border: 2px solid black;
   border-radius: 10px;
 }
+

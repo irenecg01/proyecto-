@@ -38,37 +38,43 @@
     <h3>Rellene el formulario para poder encontrar a su mascota</h3>
     <br>
     <br>
-    <form action="">
-        <label for="fname">Nombre de su mascota:</label><br>
-        <input type="text" id="fname" name="fname" value="" required><br><br>
-        <label for="fname">Seleccione su mascota:</label><br>
-        <input type="radio" id="vehicle1" name="vehicle1" value="Bike" required>
-        <label for="vehicle1"> Perro</label>
-        <input type="radio" id="vehicle1" name="vehicle1" value="Bike" required>
-        <label for="vehicle2"> Gato</label><br><br>
-        <label for="lname">Raza:</label><br>
-        <input type="text" id="lname" name="lname" value="" required ><br><br>
-        <label for="fname">Genero de su mascota:</label><br>
-        <input type="radio" id="perro" name="mascota" value="macho" required>
-        <label for="vehicle3"> Macho</label>
-        <input type="radio" id="gato" name="mascota" value="hembra" required>
-        <label for="vehicle4"> Hembra</label><br><br>
-        <label for="fname">Estado de su mascota:</label><br>
-        <input type="radio" id="vehicle5" name="estado" value="cachorro" required>
-        <label for="vehicle5"> Cachorro</label>
-        <input type="radio" id="vehicle6" name="estado" value="adulto" required>
-        <label for="vehicle6"> Adulto</label><br><br>
-        <label for="date">Elija una imagen de su mascota:</label><br>
-        <input type="file" accept="image/*" required><br><br>
-        <label for="date">Escriba una descripción de su mascota:</label><br>
-        <textarea name="" id="" cols="80" rows="10" required></textarea><br><br>
-        <input type="button" class="btnEnviar"value="Enviar">
-        &nbsp;
-        &nbsp;
-</form>
+    <form action="guardar_perdidas.php" method="post" enctype="multipart/form-data">
+      <label for="">Nombre de su mascota:</label><br>
+      <input type="text" id="nombre" name="nombre"><br><br>
+      <label for="">Seleccione su mascota:</label><br>
+      <input type="radio" id="perro" name="tipo" value="perro">
+      <label for=""> Perro</label>
+      <input type="radio" id="gato" name="tipo" value="gato">
+      <label for=""> Gato</label><br><br>
+      <label for="">Tiene Chip?</label><br>
+      <input type="radio" id="perro" name="tipo" value="perro">
+      <label for="">Si</label>
+      <input type="radio" id="gato" name="tipo" value="gato">
+      <label for="">No</label><br><br>
+      <label for="">Raza:</label><br>
+      <input type="text" id="raza" name="raza"><br><br>
+      <label for="">Genero de su mascota:</label><br>
+      <input type="radio" id="macho" name="genero" value="macho">
+      <label for=""> Macho</label>
+      <input type="radio" id="hembra" name="genero" value="hembra">
+      <label for=""> Hembra</label><br><br>
+      <label for="">Estado de su mascota:</label><br>
+      <input type="radio" id="cachorro" name="estado" value="cachorro">
+      <label for=""> Cachorro</label>
+      <input type="radio" id="adulto" name="estado" value="adulto">
+      <label for=""> Adulto</label><br><br>
+      <label for="">Lugar por donde se ha perdido:</label><br>
+      <textarea id="lugar" name="lugar" cols="80" rows="10"></textarea><br><br>
+      <label for="">Elija una imagen de su mascota:</label><br>
+      <input type="file" id="imagen" name="imagen" accept="image/*"><br><br>
+      <label for="">Escriba una descripción de su mascota:</label><br>
+      <textarea id="descripcion" name="descripcion" cols="80" rows="10"></textarea><br><br>
+      <input type="submit" class="btnEnviar" value="Enviar">
+  </form>
 </div>
+<div class="volver">
 <a href="../perdidas_logueado.php"><input type="button" class="btnEnviar"value="Volver"></a>
-
+</div>
 </section>
 <footer>
     <div class="content">
