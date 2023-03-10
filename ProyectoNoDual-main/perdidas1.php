@@ -71,5 +71,5 @@ include("fragment/menu.php");
 </script>
 <?php
 include("fragment/perdidas1.html");
-include("fragment/pie2.html");
+include("fragment/pie.html");
 ?>
