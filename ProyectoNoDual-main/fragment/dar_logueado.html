@@ -1,26 +1,23 @@
 <section id="galeria">
     <div class="container-texto">
-    <div class="info-adoptar">
-        <h2>¿Desea dar en adopción a su mascota?</h2>
-        <br>
-        <p>Si no puede hacerse cargo de su mascota no dude en rellenar el formulario para poder buscarle un hogar mejor.
-            Nosotros te propiciamos toda la ayuda posible.
-            Para poder dar en adopción debe rellenar el formulario con los datos que se le pide.
-            Y asi buscarle un hogar mejor a su mascota.</p>
-    </div>
+        <div class="info-adoptar">
+            <h2>¿Desea dar en adopción a su mascota?</h2>
+            <br>
+            <p>Si no puede hacerse cargo de su mascota no dude en rellenar el formulario para poder buscarle un hogar
+                mejor.
+                Para poder dar en adopción debe rellenar el formulario con los datos que se le pide.
+                Y asi buscarle un hogar mejor a su mascota.</p>
+        </div>
 
-    <div class="info-adoptar">
-        <h2>¿Como te ayudamos para poder dar en adopción?</h2>
-        <br>
-        <br>
-        <p>Nosotros te aportamos toda la ayuda posible gestionando los formularios rellenados por las personas que
-            quieren dar en adopción a sus mascota por los motivos que sean.
-            Una vez rellenado y enviado el formulario nosotros nos encargamos de revisar que están correctos todos los
-            datos tanto de la mascota como del propietario.
-            Hecho esto publicariamos el anuncio para que el resto de los usuarios de la páginas lo puedan ver.
-        </p>
+        <div class="info-adoptar">
+            <h2>¿Como te ayudamos para poder dar en adopción?</h2>
+            <br>
+            <br>
+            <p>Nosotros te aportamos toda la ayuda posible gestionando los formularios rellenados por las personas que
+                quieren dar en adopción a sus mascota por los motivos que sean.
+            </p>
+        </div>
     </div>
-</div>
     <br>
     <br>
     <div class="container-form">
@@ -29,14 +26,19 @@
         <br>
         <br>
         <form action="guardar.php" method="post" enctype="multipart/form-data">
-            <label for="">Introduzca el nombre de su mascota</label><br>
-            <input type="nombre" name="nombre" id="nombre" required><br><br>
+            <label for="">Introduzca el nombre de su mascota:</label><br>
+            <input type="text" id="nombre" name="nombre" required><br><br>
             <label for="">Seleccione su mascota:</label><br>
             <input type="radio" id="perro" name="tipo" value="perro" required>
             <label for=""> Perro</label>
             <input type="radio" id="gato" name="tipo" value="gato" required>
             <label for=""> Gato</label><br><br>
-            <label for="">Introduzca la raza de su mascota:</label><br>
+            <label for="">Su mascota tiene Chip?</label><br>
+            <input type="radio" id="si" name="chip" value="si" required>
+            <label for=""> Si</label>
+            <input type="radio" id="no" name="chip" value="no" required>
+            <label for=""> No</label><br><br>
+            <label for="">introduzca la raza de su mascota:</label><br>
             <input type="text" id="raza" name="raza" required><br><br>
             <label for="">Genero de su mascota:</label><br>
             <input type="radio" id="macho" name="genero" value="macho" required>
@@ -48,18 +50,17 @@
             <label for=""> Cachorro</label>
             <input type="radio" id="adulto" name="estado" value="adulto" required>
             <label for=""> Adulto</label><br><br>
-            <label for="">Elija una imagen de su mascota:</label><br>
-            <input type="file" id="imagen" name="imagen" accept="image/*" required><br><br>
             <label for="">Introduzca su numero de telefono</label><br>
-            <input type="number" id="number" name="number" ><br><br>
+            <input type="number" id="number" name="number"><br><br>
             <label for="">Introduzca su correo electronico</label><br>
             <input type="email" name="email" id="email" required><br><br>
+            <label for="">Elija una imagen de su mascota:</label><br>
+            <input type="file" id="imagen" name="imagen" accept="image/*" required><br><br>
             <label for="">Escriba una descripción de su mascota:</label><br>
-            <textarea id="descripcion" name="descripcion" cols="80" rows="10"></textarea><br><br>
+            <textarea id="descripcion" placeholder="Escriba una breve descripción de su mascota" name="descripcion" cols="80" rows="10" required></textarea><br><br>
+
             <input type="submit" class="btnEnviar" value="Enviar">
         </form>
     </div>
-    
+
 </section>
-
-

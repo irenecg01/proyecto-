@@ -4,9 +4,8 @@
             <h2>¿Desea adoptar una Mascota?</h2>
             <br>
             <p>Si buscas adoptar una mascota nosotros te propiciamos toda la ayuda posible.
-                Para poder adoptar pricipalmente debes inciar sesión, luego ya podrás navegar por la página con total
-                libertad y podrás adoptar su
-                mascota ideal.</p>
+                Aqui le aportamnos una galeria con todas las mascotas que están a disposición de ser adoptadas por su nuevo dueño.
+            </p>
         </div>
 
         <div class="info-adoptar">
@@ -17,7 +16,7 @@
                 facilitandote los datos de las
                 mascotas. Por otro lado tratamos con varias mascotas, por lo tanto para facilitar la busqueda de su
                 mascota ideal
-                tenemos unas serie de filtros para facilitar el proceso de busqueda.</p>
+                tenemos un filtros para facilitar el proceso de busqueda.</p>
         </div>
     </div>
     <br>
@@ -26,35 +25,21 @@
     <h1>Mascotas en adopción</h1>
     <br>
     <!-- un formulario q vaya a adoptar.php -->
-    
-    <div class="filtros">
+    <br>
+    <div class="container-texto">
+        <div class="filtros">
         <form action="adoptar_logueado.php" method="GET" >
-            <label for="tipo">Filtrar por mascotas:</label>
+            <label for="tipo"><h3>Filtrar por mascotas:</h3></label>
+            <br>
             <select id="tipo" name="tipo">
                <option value="Todos">Todos</option>
                 <template id="optionTipo">
                     <option value=""></option>
                 </template>
             </select>
-               <!--
-            <label for="raza">Filtrar por raza:</label>
-            <select id="raza" name="raza">
-                <option value="Todos">Todos</option>
-                <template id="optionRaza">
-                    <option value=""></option>
-                </template>
-            </select>
-         
-            <label for="edad">Filtrar por edad:</label>
-            <select id="edad" name="edad">
-                <option value="Todos">Todos</option>
-                <template id="optionEdad">
-                    <option value=""></option>
-                </template>
-            </select>
-        -->
         </form>
     </div>
+    
     <br>
     <div class="mascotas">
         <template id="mascotas">
@@ -86,6 +71,6 @@
 
     </div>
 
-
+</div>
 
 </div>

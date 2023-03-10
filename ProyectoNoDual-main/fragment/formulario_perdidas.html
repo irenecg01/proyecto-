@@ -39,34 +39,38 @@
     <br>
     <br>
     <form action="../guardar_perdidas.php" method="post" enctype="multipart/form-data">
-      <label for="">Nombre de su mascota:</label><br>
-      <input type="text" id="nombre" name="nombre"><br><br>
+      <label for="">Introduzca el nombre de su mascota:</label><br>
+      <input type="text" id="nombre" name="nombre" required><br><br>
       <label for="">Seleccione su mascota:</label><br>
-      <input type="radio" id="perro" name="tipo" value="perro">
+      <input type="radio" id="perro" name="tipo" value="perro" required>
       <label for=""> Perro</label>
-      <input type="radio" id="gato" name="tipo" value="gato">
+      <input type="radio" id="gato" name="tipo" value="gato" required> 
       <label for=""> Gato</label><br><br>
-      <label for="">Tiene Chip?</label><br>
-      <input type="radio" id="perro" name="tipo" value="perro">
-      <label for="">Si</label>
-      <input type="radio" id="gato" name="tipo" value="gato">
-      <label for="">No</label><br><br>
-      <label for="">Raza:</label><br>
-      <input type="text" id="raza" name="raza"><br><br>
+      <label for="">Su mascota tiene Chip?</label><br>
+      <input type="radio" id="si" name="chip" value="si" required>
+      <label for=""> Si</label>
+      <input type="radio" id="no" name="chip" value="no" required> 
+      <label for=""> No</label><br><br>
+      <label for="">introduzca la raza de su mascota:</label><br>
+      <input type="text" id="raza" name="raza" required><br><br>
       <label for="">Genero de su mascota:</label><br>
-      <input type="radio" id="macho" name="genero" value="macho">
+      <input type="radio" id="macho" name="genero" value="macho" required>
       <label for=""> Macho</label>
-      <input type="radio" id="hembra" name="genero" value="hembra">
+      <input type="radio" id="hembra" name="genero" value="hembra" required>
       <label for=""> Hembra</label><br><br>
       <label for="">Estado de su mascota:</label><br>
-      <input type="radio" id="cachorro" name="estado" value="cachorro">
+      <input type="radio" id="cachorro" name="estado" value="cachorro" required>
       <label for=""> Cachorro</label>
-      <input type="radio" id="adulto" name="estado" value="adulto">
+      <input type="radio" id="adulto" name="estado" value="adulto" required>
       <label for=""> Adulto</label><br><br>
+      <label for="">Introduzca su numero de telefono</label><br>
+      <input type="number" id="number" name="number" ><br><br>
+      <label for="">Introduzca su correo electronico</label><br>
+      <input type="email" name="email" id="email" required><br><br>
       <label for="">Elija una imagen de su mascota:</label><br>
-      <input type="file" id="imagen" name="imagen" accept="image/*"><br><br>
+      <input type="file" id="imagen" name="imagen" accept="image/*" required><br><br>
       <label for="">Escriba una descripción de su mascota:</label><br>
-      <textarea id="descripcion" placeholder="Indícanos detalles importantes que lo describan como tamaño, manchas, marcas, etc...Si lleva collar, chip o algún otro identificativo...Último lugar en el que fue visto...." name="descripcion" cols="80" rows="10"></textarea><br><br>
+      <textarea id="descripcion" placeholder="Indícanos detalles importantes que lo describan como tamaño, manchas, marcas, etc. Por último el lugar en el que fue visto por ultima vez" name="descripcion" cols="80" rows="10" required></textarea><br><br>
 
       <input type="submit" class="btnEnviar" value="Enviar">
   </form>
@@ -90,15 +94,24 @@
         <li><a href="#">Teléfono: +34 679 082 011</a></li>
         <li><a href="mailto:">Email: info@iPet.com</a></li>
         </ul>
-        <ul class="box">
-        <li class="link_name">Nuestra página:</li>
-        <li><a href="index.php">Inicio/Noticias</a></li>
-        <li><a href="adoptar.php">Adoptar mascotas</a></li>
-        <li><a href="dar.php">Dar en adopción</a></li>
-        <li><a href="perdidas1.php">Mascotas perdidas</a></li>
-        <li><a href="aboutus.php">Sobre nosotros</a></li>
 
-        </ul>
+        <ul class="box">
+          <li class="link_name">Personal</li>
+          <li><a href="https://www.linkedin.com/in/alberto-fern%C3%A1ndez-baena-69141a234/">Alberto Fernandez Baena</a></li>
+          <li><a href="https://www.linkedin.com/in/irene-cerezo-gomez-53181b189/">Irene Cerezo Gomez</a></li>
+          <li><a href="https://www.linkedin.com/in/el%C3%ADas-s%C3%A1nchez-mart%C3%ADn-985b02210/">Elias Sanchez Martin</a></li>
+
+      </ul>
+
+      <ul class="box">
+        <li class="link_name">Nuestra página:</li>
+        <li><a href="../index_logueado.php">Inicio/Noticias</a></li>
+        <li><a href="../adoptar_logueado.php">Adoptar mascotas</a></li>
+        <li><a href="../dar_logueado.php">Dar en adopción</a></li>
+        <li><a href="../perdidas_logueado.php">Mascotas perdidas</a></li>
+        <li><a href="../aboutus_logueado.php">Sobre nosotros</a></li>
+
+    </ul>
        
     </div>
     </div>
