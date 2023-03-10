@@ -8,22 +8,9 @@ if (isset($_POST['nombre']) && isset($_POST['tipo']) && isset($_POST['raza']) &&
     $raza = $_POST['raza'];
     $genero = $_POST['genero'];
     $estado = $_POST['estado'];
+    $imagen=$_POST[''];
     //$imagen = "img/uploads/" . $_FILES["imagen"]["name"];
     $descripcion = $_POST['descripcion'];
-    $ruta_temporal = $_FILES['imagen']['tmp_name'];
-    $carpeta = 'img/uploads/';
-    $nombre_archivo = $_FILES['imagen']['name'];
-    $ruta_destino = $carpeta . $nombre_archivo;
-
-    if (move_uploaded_file($ruta_temporal, $ruta_destino)) {
-        $imagen = "img/uploads/" . $nombre_archivo;
-
-    } else {
-        echo "Error al mover el archivo.";
-    }
-
-    // Convertir la imagen en formato binario
-    $imagen = file_get_contents($ruta_destino);
     try {
         if ($conn) {
 
