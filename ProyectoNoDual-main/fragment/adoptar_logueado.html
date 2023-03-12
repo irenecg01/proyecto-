@@ -3,8 +3,10 @@
         <div class="info-adoptar">
             <h2>¿Desea adoptar una Mascota?</h2>
             <br>
+            <br>
             <p>Si buscas adoptar una mascota nosotros te propiciamos toda la ayuda posible.
-                Aqui le aportamnos una galeria con todas las mascotas que están a disposición de ser adoptadas por su nuevo dueño.
+                Aqui le aportamnos una galeria con todas las mascotas que están a disposición de ser adoptadas por su
+                nuevo dueño.
             </p>
         </div>
 
@@ -21,39 +23,40 @@
     </div>
     <br>
     <br>
-    <br>
-    <h1>Mascotas en adopción</h1>
-    <br>
     <!-- un formulario q vaya a adoptar.php -->
     <br>
     <div class="container-texto">
         <div class="filtros">
-        <form action="adoptar_logueado.php" method="GET" >
-            <label for="tipo"><h3>Filtrar por mascotas:</h3></label>
-            <br>
-            <select id="tipo" name="tipo">
-               <option value="Todos">Todos</option>
-                <template id="optionTipo">
-                    <option value=""></option>
-                </template>
-            </select>
-        </form>
-    </div>
-    
-    <br>
-    <div class="mascotas">
-        <template id="mascotas">
-            <figure>
-                <picture>
-                    <img src="/img/animal10.jpg" alt="">
-                </picture>
-                <figcaption>
-                    <h2>Laila</h2>
-                </figcaption>
-                <button class="open">Ver ficha</button>
-            </figure>
-        </template>
-    </div>
+            <form action="adoptar_logueado.php" method="GET">
+                <h1>Mascotas en adopción</h1>
+                <br>
+                <label for="tipo">
+                    <h3>Filtrar por mascotas:</h3>
+                </label>
+                <br>
+                <select id="tipo" name="tipo">
+                    <option value="Todos">Todos</option>
+                    <template id="optionTipo">
+                        <option value=""></option>
+                    </template>
+                </select>
+            </form>
+        </div>
+
+        <br>
+        <div class="mascotas">
+            <template id="mascotas">
+                <figure>
+                    <picture>
+                        <img src="/img/animal10.jpg" alt="">
+                    </picture>
+                    <figcaption>
+                        <h2>Laila</h2>
+                    </figcaption>
+                    <button class="open">Ver ficha</button>
+                </figure>
+            </template>
+        </div>
 
 </section>
 
