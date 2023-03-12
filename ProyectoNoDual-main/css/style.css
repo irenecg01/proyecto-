@@ -4,6 +4,14 @@
   --color-verde-1: #fff;
 }
 
+#descripcion{
+  resize: none;
+  width: 80%;
+}
+
+
+
+
 * {
   box-sizing: border-box;
   margin: 0;
