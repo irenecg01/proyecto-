@@ -1,4 +1,4 @@
-
+/*
 document.querySelector("aside.menu-offcanvas button").addEventListener(
     "click", function(){
         document.querySelector("aside.menu-offcanvas").classList.toggle("on")
@@ -84,4 +84,4 @@ window.addEventListener("click", function(e){
         modalC.style.visibility= "hidden";
     },900)
     }
-})
+})*/
