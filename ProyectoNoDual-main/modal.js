@@ -1,4 +1,4 @@
-//console.log(mascotas)
+
 
 var template = document.querySelector("template#mascotas")
 var contenedor = document.querySelector(".mascotas")
