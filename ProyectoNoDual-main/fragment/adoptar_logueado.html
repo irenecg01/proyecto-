@@ -25,12 +25,13 @@
     <br>
     <!-- un formulario q vaya a adoptar.php -->
     <br>
-    
+    <br>
+    <div class="container-texto">
         <div class="filtros">
             <form action="adoptar_logueado.php" method="GET">
-                <h1>Mascotas en adopción</h1>
-                <br>
                 <label for="tipo">
+                    <h1>Mascotas en adopción</h1>
+                    <br>
                     <h3>Filtrar por mascotas:</h3>
                 </label>
                 <br>
@@ -40,9 +41,9 @@
                         <option value=""></option>
                     </template>
                 </select>
+         
             </form>
         </div>
-
         <br>
         <div class="mascotas">
             <template id="mascotas">
@@ -59,15 +60,18 @@
         </div>
 
 </section>
-
+</div>
 <div id="modal_container" class="modal-container">
     <div class="modal">
         <header>
             <h2 id="nombre">Datos de la mascota</h2>
         </header>
         <p class="raza"></p>
+        <p class="estado"></p>
         <img id="imagen" src="" alt="" width="200" height="150">
         <span id="chip"></span>
+        <p class="descripcion"></p>
+        <p class="correo"></p>
         <footer>
             <button id="close">Cerrar</button>
         </footer>

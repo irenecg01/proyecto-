@@ -58,10 +58,7 @@ function abrir(ev){
   document.querySelector("#imagen").src = mascotas[pos].imagen
   document.querySelector("#nombre").innerText = mascotas[pos].nombre
   document.querySelector("p.raza").innerText = mascotas[pos].raza
-  document.querySelector("p.descripcion").innerText = mascotas[pos].descripcion
-  document.querySelector("p.estado").innerText = mascotas[pos].estado
-  document.querySelector("p.correo").innerText = mascotas[pos].correo
-
+ 
   //peticion 
 
   modal_container.classList.add('show');  

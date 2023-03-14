@@ -3,7 +3,7 @@
 
 //var_dump($_GET);
 
-include("inicio/conexion.php");
+include("inicio/conexionperdidas.php");
 session_start();
 $user_logged = false;
 

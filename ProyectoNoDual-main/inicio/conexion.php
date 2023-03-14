@@ -14,7 +14,7 @@ function getPerros() { // esta funcion lo que hace es coger la tabla con todo
 
   global $conn;
   
-  $sql = "SELECT nombre, tipo, raza, genero, estado, descripcion,chip,imagen FROM animales";
+  $sql = "SELECT nombre, tipo, raza, genero, estado, descripcion,chip,imagen, telefono, correo FROM animales";
   $stmt = $conn->prepare($sql); 
   $stmt->execute();
   $result = $stmt->get_result();
@@ -35,7 +35,7 @@ function getPerrosFiltrado($tipo, $raza, $estado) { // esta funcion hace un sele
 
   global $conn;
   
-  $sql = "SELECT nombre, tipo, raza, genero, estado, descripcion,chip,imagen FROM animales WHERE tipo=? AND raza=? AND estado=?";
+  $sql = "SELECT nombre, tipo, raza, genero, estado, descripcion,chip,imagen, telefono, correo FROM animales WHERE tipo=? AND raza=? AND estado=?";
   $stmt = $conn->prepare($sql); 
   $stmt->bind_param("sss", $tipo, $raza, $estado);
   $stmt->execute();
@@ -56,7 +56,7 @@ function getPerrosTipo($tipo) { // funcion que hace que coge el tipo de ha escog
 
   global $conn;
   
-  $sql = "SELECT nombre, tipo, raza, genero, estado, descripcion,chip,imagen FROM animales WHERE tipo=?";
+  $sql = "SELECT nombre, tipo, raza, genero, estado, descripcion,chip,imagen, telefono, correo FROM animales WHERE tipo=?";
   $stmt = $conn->prepare($sql); 
   $stmt->bind_param("s", $tipo );
   $stmt->execute();
@@ -98,7 +98,7 @@ function getPerrosRaza($raza) { // funcion que hace que coge el tipo de ha escog
 
   global $conn;
   
-  $sql = "SELECT nombre, tipo, raza, genero, estado, descripcion,chip,imagen FROM animales WHERE raza=?";
+  $sql = "SELECT nombre, tipo, raza, genero, estado, descripcion,chip,imagen, telefono, correo FROM animales WHERE raza=?";
   $stmt = $conn->prepare($sql); 
   $stmt->bind_param("s", $raza );
   $stmt->execute();
