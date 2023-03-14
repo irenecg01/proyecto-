@@ -2,6 +2,9 @@
 include("inicio/conexion.php");
 
 
+
+
+
 if (isset($_POST['nombre']) && isset($_POST['tipo']) && isset($_POST['raza'])&& isset($_POST['chip']) && isset($_POST['genero']) && isset($_POST['estado']) && isset($_FILES["imagen"]) && isset($_POST['descripcion']) && isset($_POST['telefono']) && isset($_POST['correo'])) {
 
     $nombre_mascota = $_POST['nombre'];
@@ -26,7 +29,7 @@ if (isset($_POST['nombre']) && isset($_POST['tipo']) && isset($_POST['raza'])&& 
             $stmt->execute();
 
 
-            echo "Los datos se han guardado correctamente.";
+            header('Location: adoptar_logueado.php');
         } else {
             echo "Error en la conexión a la base de datos.";
         }

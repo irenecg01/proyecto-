@@ -25,7 +25,7 @@ if (isset($_POST['nombre']) && isset($_POST['tipo']) && isset($_POST['raza'])&& 
             $stmt->execute();
 
 
-            echo "Los datos se han guardado correctamente.";
+            header('Location: perdidas_logueado.php');
         } else {
             echo "Error en la conexión a la base de datos.";
         }
